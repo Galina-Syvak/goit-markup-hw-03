@@ -40,6 +40,8 @@ p {
 
 .header {
   border-bottom: 1px solid var(--border-project);
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   font-weight: 500;
   font-size: 14px;
@@ -57,8 +59,6 @@ p {
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px; /*25px-1px border*/
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -83,8 +83,6 @@ p {
 
 .nav-link {
   display: block;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 
   color: var(--title-text-color);
   text-decoration: none;
@@ -102,8 +100,6 @@ p {
 
 .contact {
   display: block;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
 
   color: var(--primery-text-color);
   text-decoration: none;
@@ -153,14 +149,10 @@ p {
   text-decoration: none;
 }
 
-/*MARGIN секций*/
-.hero,
-.features,
-.services {
-  margin-bottom: 94px;
-}
-
 /* Особенности */
+.features {
+  padding-top: 94px;
+}
 
 .features-list {
   display: flex;
@@ -194,6 +186,12 @@ p {
 }
 
 /* Чем мы занимаемся, Команда */
+
+.services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .services-list {
   display: flex;
 }
@@ -304,8 +302,8 @@ p {
 /* ПОРТФОЛИО */
 /* Фильтр */
 .project {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button-list {
@@ -358,6 +356,11 @@ p {
   flex-basis: calc(100% / 3-var(var(--card-set-gap)));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+}
+
+.card {
+  display: block;
+  text-decoration: none;
 }
 
 .card-img {
